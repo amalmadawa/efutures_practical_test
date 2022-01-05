@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/scenariosFragment">
+
+    <fragment
+        android:id="@+id/scenariosFragment"
+        android:name="com.amal.efuturespracticaltest.ui.view.ScenariosFragment"
+        android:label="scenarios_fragment"
+        tools:layout="@layout/scenarios_fragment" >
+        <action
+            android:id="@+id/action_scenariosFragment_to_casesFragment"
+            app:destination="@id/casesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/casesFragment"
+        android:name="com.amal.efuturespracticaltest.ui.view.CasesFragment"
+        android:label="cases_fragment"
+        tools:layout="@layout/cases_fragment" />
+</navigation>
